@@ -16,7 +16,7 @@ func JsonEncode(data interface{}) string {
 }
 
 // json解码操作
-func JsonDecode(jsonStr string) interface{} {
+func JsonDecode(jsonStr string) map[string]interface{} {
 	maps := map[string]interface{}{}
 	err := json.Unmarshal([]byte(jsonStr), &maps)
 	if err != nil {
