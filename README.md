@@ -30,4 +30,15 @@ fmt.Println(encodeStr, decodeStr)
 // decode: hello world
 ```
 
+### io类方法列表
+```go
+// IsFile
+success := IsFile(filePath)
+
+// IsDir
+success := IsDir(dirPath)
+
+// CopyFile
+writeBytes, err := CopyFile(src, dst)
+```
 
