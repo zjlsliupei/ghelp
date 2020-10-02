@@ -42,3 +42,13 @@ success := IsDir(dirPath)
 writeBytes, err := CopyFile(src, dst)
 ```
 
+### 数组类方法列表
+InArray:判断元素是否在数组中
+```go
+item1 := "a"
+items1 := []string{"a","b","c"}
+if !InArray(item1, items1) {
+    t.Error("a in not in [a,b,c]")
+}
+
+```
