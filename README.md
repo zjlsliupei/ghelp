@@ -50,5 +50,29 @@ items1 := []string{"a","b","c"}
 if !InArray(item1, items1) {
     t.Error("a in not in [a,b,c]")
 }
+```
 
+### excel列序号前进、后退等操作
+excel_col.NextColName:获取下一列名称
+```go
+fmt.Println(NextColName("Z"))
+// output: AA
+```
+
+excel_col.PreColName:获取上一列名称
+```go
+fmt.Println(NextColName("AA"))
+// output: Z
+```
+
+excel_col.FirstColName:获取首列名称
+```go
+fmt.Println(FirstColName())
+// output: A
+```
+
+excel_col.LastColName:获取尾列名称
+```go
+fmt.Println(LastColName())
+// output: XFD
 ```
